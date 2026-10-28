@@ -2,3 +2,4 @@
 .remote{display:flex;align-items:center;gap:11px}.remote svg{width:22px;height:22px;stroke:currentColor;stroke-width:1.8;fill:none;flex:none}.remote .remote-arrow{width:14px;height:14px;margin-left:auto}
 
 .pane{column-gap:20px}.pane>div{padding-left:18px;padding-right:18px}.pane>div:first-child{padding-left:0}.pane>div:last-child{padding-right:0}.pane h4{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:23px}.pane .toggle{float:none;flex:0 0 40px;margin-left:auto}
+.remote-status{width:8px;height:8px;border-radius:50%;background:#14c99a;margin-left:auto;box-shadow:0 0 8px #14c99a66}.remote .remote-arrow{margin-left:8px}.pane .toggle.disabled{opacity:.4;cursor:not-allowed}.pane i{color:#91a5c5}
