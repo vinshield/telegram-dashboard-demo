@@ -20,9 +20,8 @@ function render() {
         <div class="label">Messages and instructions</div>
         <div class="key"><span class="keycode">${a[5]}</span><span>Ziki</span><button class="copy">Copy</button></div>
       </div></div>
-      <div class="controls"><select><option>${a[2]}</option></select><select><option>Ziki</option></select>
-        <div class="actions"><button>Regenerate key</button><button class="danger">Revoke</button><button class="danger">Delete</button></div>
-      </div>
+      <div class="controls"><select><option>${a[2]}</option></select><select><option>Ziki</option></select></div>
+      <div class="actions"><button>Regenerate key</button><button class="danger">Revoke</button><button class="danger">Delete</button></div>
       <button class="remote" data-i="${i}">${globe}<span>Remote</span>${a[6] === 'connected' ? '<i class="remote-status" title="Telegram connected"></i>' : ''}${arrow}</button>
       ${expanded === i ? pane(a, i) : ''}
     </article>`).join('');

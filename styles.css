@@ -3,3 +3,7 @@
 
 .pane{column-gap:20px}.pane>div{padding-left:18px;padding-right:18px}.pane>div:first-child{padding-left:0}.pane>div:last-child{padding-right:0}.pane h4{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:23px}.pane .toggle{float:none;flex:0 0 40px;margin-left:auto}
 .remote-status{width:8px;height:8px;border-radius:50%;background:#14c99a;margin-left:auto;box-shadow:0 0 8px #14c99a66}.remote .remote-arrow{margin-left:8px}.pane .toggle.disabled{opacity:.4;cursor:not-allowed}.pane i{color:#91a5c5}
+
+/* Keep the per-agent controls in matching horizontal rows on desktop. */
+.card>.actions{grid-column:1;grid-row:2;align-self:start;display:flex;flex-wrap:wrap;gap:8px;text-align:left}.card>.actions button{margin:0}.card>.remote{grid-column:2;grid-row:2;align-self:start;width:100%}
+@media(max-width:760px){.card{gap:12px}.card>.controls,.card>.actions,.card>.remote{grid-column:1;grid-row:auto;width:100%}.card>.actions{gap:8px}.card>.actions button{flex:1 1 auto;margin:0;padding:10px 8px}.card>.pane{grid-template-columns:1fr;gap:12px}.card>.pane>div{padding:10px 0;border-right:0;border-bottom:1px solid #1b2c4b}.card>.pane>div:first-child{padding-top:0}.card>.pane>div:last-child{padding-bottom:0;border-bottom:0}}
